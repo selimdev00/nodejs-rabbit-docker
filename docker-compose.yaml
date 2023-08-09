@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  m1:
+    build: m1/
+
+    restart: on-failure
+
+    depends_on:
+      - rabbitmq
+
+    ports:
+      - "8081:8081"
+
+
+  m2:
+    build: m2/
+
+    depends_on:
+      - rabbitmq
+
+    restart: unless-stopped
+
+  rabbitmq:
+    image: rabbitmq
+
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:5672" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5

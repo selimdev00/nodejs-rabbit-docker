@@ -1,0 +1,17 @@
+{
+  "name": "green_api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "docker compose up --build -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selimdev00/nodejs-rabbit-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selimdev00/nodejs-rabbit-docker/issues"
+  },
+  "homepage": "https://github.com/selimdev00/nodejs-rabbit-docker#readme"
+}
