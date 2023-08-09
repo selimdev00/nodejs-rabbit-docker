@@ -30,13 +30,13 @@ git clone https://github.com/selimdev00/nodejs-rabbit-docker
 Go to the project directory
 
 ```bash
-  cd nodejs-rabbit-docker
+cd nodejs-rabbit-docker
 ```
 
 Start microservices on docker
 
 ```bash
-  npm run start
+npm run start
 ```
 
 
