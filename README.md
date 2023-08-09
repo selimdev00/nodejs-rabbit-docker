@@ -15,7 +15,7 @@
 To deploy this project run
 
 ```bash
-  npm run start
+npm run start
 ```
 
 
