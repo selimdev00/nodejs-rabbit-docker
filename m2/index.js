@@ -1,10 +1,12 @@
+require("dotenv").config();
+
 const amqp = require("amqplib");
 
 const queue = "message";
 
 const consume = async () => {
   try {
-    const connection = await amqp.connect("amqp://rabbitmq");
+    const connection = await amqp.connect(process.env.RABBITMQ_HOST);
     const channel = await connection.createChannel();
 
     process.once("SIGINT", async () => {
