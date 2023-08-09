@@ -4,6 +4,9 @@
 
 ![Требования](https://github.com/selimdev00/nodejs-rabbit-docker/assets/69434200/9adc37ce-73a2-455d-9871-e7ac0408a72c)
 
+## Необходимые зависимости
+`docker` `docker-compose` `node`
+
 
 ## Screenshots
 
