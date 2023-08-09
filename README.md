@@ -39,6 +39,15 @@ Start microservices on docker
 npm run start
 ```
 
+1. M1 (producer) receives only 1 request (POST /message) and sends it to rabbit mq queue
+
+![image](https://github.com/selimdev00/nodejs-rabbit-docker/assets/69434200/87c34c0f-87f4-4abd-b7ec-1698bd388959)
+
+3. M2 (consumer) receives message from rabbit mq queue and handles it
+4. RabbitMQ works!
+
+
+
 ## Authors
 
 - [@selimdev](https://github.com/selimdev00)
