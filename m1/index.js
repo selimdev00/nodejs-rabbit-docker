@@ -13,7 +13,7 @@ const produce = async (queue, data) => {
   let connection;
 
   try {
-    connection = await amqp.connect("amqp://rabbitmq");
+    connection = await amqp.connect(process.env.RABBITMQ_HOST);
     const channel = await connection.createChannel();
 
     await channel.assertQueue(queue, { durable: false });
